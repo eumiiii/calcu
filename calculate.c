@@ -20,7 +20,7 @@ float Divide(float num1, float num2){
 int main (){
 	float num1, num2;
 	int mdas;
-	
+	//yeyeyeye
 	printf("1. Multiply \n2. Divide \n3. Add \n4. Subtract \n\nEnter a number [1/2/3/4]: ");
 	scanf("%d", &mdas);
 	
