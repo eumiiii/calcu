@@ -3,7 +3,7 @@
 float getInput(int x){
 	float num;
 	
-	printf("Enter num%d: ",x);
+	printf("\nEnter num%d: ",x);
 	scanf("%f",&num);
 	
 	return num;
@@ -17,8 +17,20 @@ float Divide(float num1, float num2){
 	return num1 / num2;
 }
 
+float Add (float num1, float num2){
+    return num1 + num2;
+}
+
+float Subtract (float num1, float num2) {
+    return num1 - num2;
+}
+
+void printOutput (float fResult) {
+    printf("\n= %.2f\n", fResult);
+}
+
 int main (){
-	float num1, num2;
+	float num1, num2, final;
 	int mdas;
 	//yeyeyeye
 	printf("1. Multiply \n2. Divide \n3. Add \n4. Subtract \n\nEnter a number [1/2/3/4]: ");
@@ -29,18 +41,19 @@ int main (){
 	
 	switch (mdas){
 		case 1: 
-			Multiply(num1, num2);
+			final = Multiply(num1, num2);
 			break;
 		
 		case 2: 
-			Divide(num1, num2);
+			final = Divide(num1, num2);
 			break;
 			
 		case 3:
-			Add(num1, num2);
+			final = Add(num1, num2);
 			break;
 			
 		case 4:	
-			Subtract(num1, num2);
+			final = Subtract(num1, num2);
 	}
+	printOutput(final);
 }
