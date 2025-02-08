@@ -26,6 +26,7 @@ int main (){
 	
 	num1 = getInput(1);
 	num2 = getInput(2);
+	printf("hello");
 	
 	switch (mdas){
 		case 1: 
